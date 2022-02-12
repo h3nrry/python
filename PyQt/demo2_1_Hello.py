@@ -3,10 +3,10 @@
 import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-app = QtWidgets.QApplication(sys.argv)
-widgetHello = QtWidgets.QWidget()
-widgetHello.resize(280, 150)
-widgetHello.setWindowTitle("Demo2_1")
+app = QtWidgets.QApplication(sys.argv)   #建立app, 用Qapplication 類別
+widgetHello = QtWidgets.QWidget()        #建立表單, 用QWidget 類別
+widgetHello.resize(280, 150)             #設定表單的寬度和高度
+widgetHello.setWindowTitle("Demo2_1")    #設定表單的標題文字
 
 LabHello = QtWidgets.QLabel(widgetHello)
 LabHello.setText("Hello World, PyQt5")
